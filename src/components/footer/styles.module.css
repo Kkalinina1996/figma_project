@@ -1,0 +1,107 @@
+/* full-width footer bar like Figma */
+.footer {
+  background: #52606D;
+  height: 370px;       /* Figma height */
+  width: 100%;
+  min-width: 1920px;   /* lock desktop canvas for 1:1 */
+}
+
+/* centered inner area (Figma shows ≈1736px content inside 1920px) */
+.inner {
+  width: 1736px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 100px;  /* space before cities row */
+  position: relative;
+  box-sizing: border-box;
+  font-family: Raleway, Arial, sans-serif;
+}
+
+/* top row: cities on the left, social icons on the right */
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ---- cities block ---- */
+.citiesTitle {
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 700;   /* Bold */
+  line-height: 26px;
+  margin: 0 0 16px 0;
+
+  margin-bottom: 55px;   /* NEW value from your Figma */
+}
+
+
+
+/* stay on one line, no wrapping */
+.citiesList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* base item style + default gap */
+.city {
+  color: #D0E8FF;
+  font-size: 22px;
+  font-weight: 600;   /* SemiBold */
+  line-height: 26px;
+  margin-right: 50px; /* default; some overridden below */
+}
+
+/* manual gaps to visually match Figma (tweak if needed) */
+.city:nth-child(1) { margin-right: 45px; } /* Осака */
+.city:nth-child(2) { margin-right: 58px; } /* Кобэ */
+.city:nth-child(3) { margin-right: 60px; } /* Токио */
+.city:nth-child(4) { margin-right: 55px; } /* Ханой */
+.city:nth-child(5) { margin-right: 68px; } /* Назва */
+.city:nth-child(6) { margin-right: 70px; } /* Томаму */
+.city:nth-child(7) { margin-right: 62px; } /* Йокогама */
+.city:nth-child(8) { margin-right: 66px; } /* Нагоя */
+.city:nth-child(9) { margin-right: 54px; } /* Саппоро */
+.city:last-child   { margin-right: 0; }
+
+/* ---- social icons ---- */
+.social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+ 
+}
+
+.social img {
+  width: 24px;
+  height: 24px;
+  
+}
+
+/* ---- horizontal line under cities (exact Figma spec) ---- */
+.cityLine {
+  width: 1720px;                    /* exact width from Figma */
+  border-bottom: 2px solid #465461; /* exact color and thickness */
+  margin-top: 48px;                 /* space under the city row */
+}
+
+/* ---- bottom brand ---- */
+.bottom {
+  position: absolute;
+  left: 100px;    /* exact from Figma */
+  bottom: 40px;   /* same visual baseline */
+
+}
+
+.brand {
+  font-family: "Red Hat Display", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 100%;
+  color: #A0A0A0;   /* exact Figma color */
+}
+

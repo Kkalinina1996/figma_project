@@ -1,0 +1,260 @@
+/* === Общие настройки === */
+.main {
+  background-color: #cde7ff;
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 120px;
+}
+
+/* === HERO === */
+.hero {
+  padding: 235px 100px 0;
+}
+
+.hero h1 {
+  width: 628px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  width: 1132px;
+  height: 105px;
+  border-radius: 8px;
+  padding: 0 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.inputGroup img {
+  width: 20px;
+  height: 20px;
+}
+
+.inputGroup input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 100%;
+}
+
+.line {
+  width: 1px;
+  height: 60%;
+  background-color: #dcdcdc;
+  margin: 0 16px;
+}
+
+.searchButton {
+  width: 213px;
+  height: 105px;
+  background-color: #274059;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.searchButton:hover {
+  background-color: #34526d;
+}
+
+/* === LOGO BAR === */
+.logoBar {
+  background-color: #fff;
+  width: 1920px;
+  height: 180px;
+  margin-top: 296px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoBar p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.logos img {
+  height: 40px;
+  object-fit: contain;
+}
+
+/* === CATEGORIES === */
+.categories {
+  padding: 100px 100px 0;
+}
+
+.categories h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px 100px;
+  max-width: 1720px;
+}
+
+.categoryCard {
+  background: #ffffff;
+  width: 330px;
+  height: 180px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.2s ease;
+}
+
+.categoryCard:hover {
+  transform: translateY(-5px);
+}
+
+.categoryCard img {
+  width: 40px;
+  height: 40px;
+}
+
+.categoryCard p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* === JOBS === */
+.jobs {
+  padding: 216px 100px 0;
+}
+
+.jobsTitle {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.jobsSubtitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #8d8d8d;
+  margin-top: 10px;
+}
+
+.jobsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 60px;
+  margin-top: 80px;
+}
+
+.jobCard {
+  width: 450px;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  padding: 46px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.jobCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.jobHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.jobDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.jobCategory {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.jobTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+  margin: 25px 0 10px;
+}
+
+.jobLocation {
+  font-size: 16px;
+  color: #8d8d8d;
+  margin-bottom: 40px;
+}
+
+.jobFooter {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #8d8d8d;
+}
+
+.jobFooter img {
+  width: 24px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.jobCompany {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* === Кнопка "Все вакансии" === */
+.allJobsButton {
+  margin: 80px auto 0;
+  display: block;
+  width: 236px;
+  height: 63px;
+  background-color: #274059;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.allJobsButton:hover {
+  background-color: #34526d;
+}
